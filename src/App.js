@@ -11,7 +11,11 @@ function App() {
   }
 
   return (
-      quizStarted ? <Quiz /> : <Intro handleClick={startQuiz} />
+    <div className='app'>
+      {quizStarted ? <Quiz /> : <Intro handleClick={startQuiz} />}
+      <img id="blob-top" src={"./blob_2.png"}/>
+      <img id="blob-bot" src={"./blob_1.png"}/>
+    </div>
   );
 }
 
