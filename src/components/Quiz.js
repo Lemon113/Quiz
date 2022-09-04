@@ -3,6 +3,7 @@ import React from "react"
 import { nanoid } from "nanoid"
 
 function Quiz() {
+    /// TODO: fetch questions from API "https://opentdb.com/api.php?amount=10"
     const [questions, setQuestions] = React.useState(() => [
         {id: nanoid(), q: "q?", options: ["option1", "option2", "option3", "option4"], selected: ""},
         {id: nanoid(), q2: "q?", options: ["option1", "option2", "option3", "option4"], selected: ""},
